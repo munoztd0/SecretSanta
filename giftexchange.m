@@ -22,7 +22,7 @@ list3{1,2} = 'Given';
 
 fprintf('Sending e-mails...\n');
 
-% Send the email   %change whatever mesage you want between the ' '
+% Send the email  %change whatever mesage you want between the ' '
 for iContacts = 1:size(list,1)
     send_mail_message(mail, password, list{iContacts,2},'Gift Exchange',...
         ['Hello ' list{iContacts,1} sprintf(',\n\n')...
